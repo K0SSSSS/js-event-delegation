@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinks</title>
+    <style>
+      .cocktailBox {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cocktailItem {
+        align-items: center;
+        width: 50vw;
+        /* height: 5vh; */
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(86, 86, 86);
+      }
+      .cocktailImg {
+        width: 34px;
+        opacity: 1;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .js-isActive {
+        width: 40vw;
+        position: fixed;
+        top: 10vh;
+        right: 0;
+      }
+      .isActiveCard {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cocktailBox"></div>
+
+    <script src="./js/05-drinks.js" type="module"></script>
+  </body>
+</html>
